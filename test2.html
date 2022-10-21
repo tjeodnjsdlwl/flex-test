@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+</head>
+<body>
+    <style>
+        .gnb{
+            background: #ccc;
+        }
+        .gnb ul{
+            display: flex;
+            justify-content: center;
+        }
+        .gnb ul li{
+            padding: 10px;
+        }
+    </style>
+
+    <nav class="gnb">
+        <ul>
+            <li>menu1</li>
+            <li>menu1</li>
+            <li>menu1</li>
+            <li>menu1</li>
+        </ul>
+    </nav>
+
+    <style>
+        main{
+            width: 800px;
+            margin: 10px auto;
+        }
+        .box1{
+            background: #ccc;
+            padding: 10px;
+        }
+        .box1 .top{
+            height: 100px;
+            background: #fff;
+            margin-bottom: 10px;
+        }
+        .box1 .bottom1{
+            display: flex;
+            background: #fff;padding: 10px;
+        }
+        .box1 .left1{
+            /* background: #00f; */
+            flex-grow: 1;
+            margin-right: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .box1 .left1 li{
+            width: calc((100% - 20px)/3);
+            background: #0f0;
+            height: 100px;
+            
+        }
+        .box1 .right1{
+            width: 150px;
+            background: #f00;
+        }
+
+
+
+    </style>
+
+    <main>
+        <div class="box1">
+            <div class="top">top</div>
+            <div class="bottom1">
+                <ul class="left1">
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>6</li>
+                </ul>
+                <div class="right1">
+                    right
+                </div>
+            </div>
+
+            <style>
+                .bottom2{
+                    display: flex;
+                    padding: 10px;
+                    background: #fff;
+                    margin-top: 10px;
+                    gap: 10px;
+                }
+                .bottom2 .left2{
+                    flex: 1;
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    gap: 10px;
+                    padding: 10px;
+                    background: #00f;
+                }
+                
+                .bottom2 .right2{
+                    flex: 1;
+                    display: grid;
+                    grid-template-columns: repeat(4,1fr);
+                    gap: 10px;
+                    background: #f00;
+                    padding: 10px;
+                }
+                .bottom2 .right2 img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+            </style>
+
+            <div class="bottom2">
+                <ul class="left2">
+                    <li><img src="https://s.pstatic.net/shopping.phinf/20221012_11/7b398e90-a201-4d09-9eb0-cfdf538b626d.jpg?type=f214_292" alt=""></li>
+                    <li><img src="https://s.pstatic.net/shopping.phinf/20221012_11/7b398e90-a201-4d09-9eb0-cfdf538b626d.jpg?type=f214_292" alt=""></li>
+                    <li><img src="https://s.pstatic.net/shopping.phinf/20221012_11/7b398e90-a201-4d09-9eb0-cfdf538b626d.jpg?type=f214_292" alt=""></li>
+                    <li><img src="https://s.pstatic.net/shopping.phinf/20221012_11/7b398e90-a201-4d09-9eb0-cfdf538b626d.jpg?type=f214_292" alt=""></li>
+                    <li><img src="https://s.pstatic.net/shopping.phinf/20221012_11/7b398e90-a201-4d09-9eb0-cfdf538b626d.jpg?type=f214_292" alt=""></li>
+                    <li><img src="https://s.pstatic.net/shopping.phinf/20221012_11/7b398e90-a201-4d09-9eb0-cfdf538b626d.jpg?type=f214_292" alt=""></li>
+                </ul>
+                <ul class="right2">
+                    <li><img src="https://s.pstatic.net/shopping.phinf/20221012_11/7b398e90-a201-4d09-9eb0-cfdf538b626d.jpg?type=f214_292" alt=""></li>
+                    <li><img src="https://s.pstatic.net/shopping.phinf/20221012_11/7b398e90-a201-4d09-9eb0-cfdf538b626d.jpg?type=f214_292" alt=""></li>
+                    <li><img src="https://s.pstatic.net/shopping.phinf/20221012_11/7b398e90-a201-4d09-9eb0-cfdf538b626d.jpg?type=f214_292" alt=""></li>
+                    <li><img src="https://s.pstatic.net/shopping.phinf/20221012_11/7b398e90-a201-4d09-9eb0-cfdf538b626d.jpg?type=f214_292" alt=""></li>
+                    <li><img src="https://s.pstatic.net/shopping.phinf/20221012_11/7b398e90-a201-4d09-9eb0-cfdf538b626d.jpg?type=f214_292" alt=""></li>
+                    <li><img src="https://s.pstatic.net/shopping.phinf/20221012_11/7b398e90-a201-4d09-9eb0-cfdf538b626d.jpg?type=f214_292" alt=""></li>
+                    <li><img src="https://s.pstatic.net/shopping.phinf/20221012_11/7b398e90-a201-4d09-9eb0-cfdf538b626d.jpg?type=f214_292" alt=""></li>
+                    <li><img src="https://s.pstatic.net/shopping.phinf/20221012_11/7b398e90-a201-4d09-9eb0-cfdf538b626d.jpg?type=f214_292" alt=""></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <style>
+            .box2{
+            background: #ccc;
+            padding: 10px;
+            margin-top: 100px;
+        }
+        .box2 .top{
+            height: 100px;
+            background: #fff;
+            margin-bottom: 10px;
+        }
+        .box2 .bottom{
+            display: flex;
+            background: #fff;
+            padding: 10px;
+
+        }
+        .box2 .left{
+            background: #00f;
+            flex-grow: 1;
+            margin-right: 10px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,100px);
+            gap: 10px;
+        }
+        .box2 .left li{
+            background: #0f0;
+        }
+        .box2 .right{
+            width: 150px;
+            background: #f00;
+
+        }
+        </style>
+  
+
+     
+
+
+    </main>
+
+
+    <style>
+        .memo{
+            background: #222;
+            padding: 50px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 28px;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+        }
+        .memo ul{
+            list-style:circle;
+        }
+        .memo li{
+            padding: 10px 0;
+        }
+    </style>
+    <div class="memo">
+        <ul>
+            <li>그리드  플렉스 사용가능</li>
+            <li>모든 여백10px</li>
+            <li>모든 높이는 자유</li>
+            <li>모든 배경색은 자유</li>
+        </ul>
+    </div>
+
+
+</body>
+</html>
